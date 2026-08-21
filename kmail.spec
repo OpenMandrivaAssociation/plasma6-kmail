@@ -8,6 +8,8 @@ Summary:	KDE email client
 Name:		kmail
 Version:	26.08.0
 Release:	%{?git:0.%{git}.}1
+# cmake configs still contain a dead KPim6Mime fallback
+%global __requires_exclude cmake\\(KPim6Mime\\)|cmake\\(kpim6mime\\)
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		https://www.kde.org
