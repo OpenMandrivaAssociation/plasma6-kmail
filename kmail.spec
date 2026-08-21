@@ -6,7 +6,7 @@
 
 Summary:	KDE email client
 Name:		kmail
-Version:	26.04.3
+Version:	26.08.0
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -71,7 +71,7 @@ BuildRequires:	cmake(KPim6LdapWidgets)
 BuildRequires:	cmake(KPim6MailTransport)
 BuildRequires:	cmake(KPim6TextEdit)
 BuildRequires:	cmake(KPim6KontactInterface)
-BuildRequires:	cmake(KPim6Mime)
+BuildRequires:	cmake(KF6Mime)
 BuildRequires:	cmake(KPim6Gravatar)
 BuildRequires:	cmake(KPim6Libkleo)
 BuildRequires:	cmake(KPim6KSieve)
@@ -126,6 +126,7 @@ information manager of KDE.
 %{_iconsdir}/*/*/emblems/*.svg
 %{_iconsdir}/*/*/apps/kmail.*
 %{_datadir}/knotifications6/kmail2.notifyrc
+%{_datadir}/knotifications6/kontact.notifyrc
 %{_datadir}/qlogging-categories6/kmail.categories
 %{_datadir}/qlogging-categories6/kmail.renamecategories
 %{_datadir}/metainfo/org.kde.kmail2.appdata.xml
